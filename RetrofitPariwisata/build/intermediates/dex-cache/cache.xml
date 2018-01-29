@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Akbar\AndroidStudioProjects\RetrofitPariwisata\app\libs\PhotoUtil.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="caf49e92eae4ca2805d530a92cb4777c1ef53f53">
+        <dex dex="C:\Users\Akbar\AndroidStudioProjects\RetrofitPariwisata\app\build\intermediates\pre-dexed\debug\PhotoUtil_2f203d033aab8bb125d4f86c257b164a0038b542.jar" />
+    </item>
+
+</items>

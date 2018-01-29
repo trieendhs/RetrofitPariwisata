@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_data_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context="com.example.trieendah.retrofitpariwisata.AddUserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp">
+
+        <TextView
+            android:id="@+id/registxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="register"
+            android:textAllCaps="true"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgAddPhotoId"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/registxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/wendy" />
+
+        <Button
+            android:id="@+id/btAddPhotoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imgAddPhotoId"
+            android:layout_alignRight="@+id/imgAddPhotoId"
+            android:layout_below="@+id/imgAddPhotoId"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:text="Select Photo Id" />
+
+        <Button
+            android:id="@+id/btTakePhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_above="@+id/btAddPhotoId"
+            android:layout_alignEnd="@+id/LinearLayout"
+            android:layout_alignRight="@+id/LinearLayout"
+            android:background="@drawable/kamera" />
+
+        <TextView
+            android:id="@+id/userAddIdUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btAddPhotoId"
+            android:layout_marginTop="50dp"
+            android:text="ID User        :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtAddIdUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userAddIdUser"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/userAddIdUser"
+            android:hint="id_user" />
+
+        <TextView
+            android:id="@+id/userAddNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userAddIdUser"
+            android:text="Nama          :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtAddNamaUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userAddNama"
+
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/userAddNama"
+            android:hint="Nama" />
+
+        <TextView
+            android:id="@+id/userAddUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userAddNama"
+            android:text="Username   :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtAddUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userAddUsername"
+
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/userAddUsername"
+            android:hint="username" />
+
+        <TextView
+            android:id="@+id/userStatusUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userAddUsername"
+            android:text="Status User :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtAddStatusUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userStatusUser"
+
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/userStatusUser"
+            android:hint="user" />
+
+        <TextView
+            android:id="@+id/userPasswordUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userStatusUser"
+            android:text="Password   :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtAddPasswordUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userPasswordUser"
+
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/userStatusUser"
+            android:hint="password"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userPasswordUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btAddData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Daftar" />
+
+            <Button
+                android:id="@+id/btAddBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Back to Login" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAddMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/LinearLayout"
+            android:hint=""
+            android:inputType="textMultiLine"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</ScrollView>

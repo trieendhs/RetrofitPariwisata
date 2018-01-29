@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/ok">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+    <!--<TextView-->
+        <!--android:id="@+id/tvTanggalBeli"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Tanggal Pembelian"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:textSize="15sp"-->
+        <!--android:textStyle="bold"-->
+        <!--/>-->
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="ID Pariwisata"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:id="@+id/idkategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="ID Kategori"
+            android:textSize="15dp"
+            android:layout_below="@+id/id"
+            />
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:textSize="15dp"
+            android:layout_below="@id/idkategori"
+            />
+        <TextView
+            android:id="@+id/lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Lokasi"
+            android:textSize="15dp"
+            android:layout_below="@id/nama"
+            />
+        <TextView
+            android:id="@+id/tiket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tiket"
+            android:textSize="15dp"
+            android:layout_below="@id/lokasi"
+            />
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi"
+            android:textSize="15dp"
+            android:layout_below="@id/tiket"
+            />
+    </RelativeLayout>
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+</LinearLayout>

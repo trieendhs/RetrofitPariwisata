@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/ok">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/userNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imgUser"
+            android:layout_toRightOf="@+id/imgUser"
+            android:hint="Nama"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgUser"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/wendy" />
+
+        <TextView
+            android:id="@+id/idUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgUser"
+            android:layout_below="@id/idUser"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgUser"
+            android:hint="Id Pembeli"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idUser"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgUser"
+            android:hint="Username :"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/userNameContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="trieedhs"
+            android:textSize="20dp"
+            android:layout_below="@+id/userName"
+            android:layout_toRightOf="@+id/imgUser"
+            android:layout_toEndOf="@+id/imgUser" />
+
+        <TextView
+            android:id="@+id/userStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="User Status :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/userNameContent"
+            android:layout_toRightOf="@+id/imgUser"
+            android:layout_toEndOf="@+id/imgUser" />
+        <TextView
+            android:id="@+id/userStatusContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="User"
+            android:textSize="20dp"
+            android:layout_below="@+id/userStatus"
+            android:layout_toRightOf="@+id/imgUser"
+            android:layout_toEndOf="@+id/imgUser" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>
